@@ -25,10 +25,12 @@ boton_cifrar.addEventListener("click",()=>{
 
 document.getElementsByClassName("close")[0].onclick = function(){
     document.getElementById("myModal").style.display = "none"
+    document.getElementsByClassName("mensajeContenido")[0].innerHTML = ""
 }
 
 window.onclick = function(event){
     if(event.target == document.getElementById("myModal")){
-            document.getElementById("myModal").style.display = "none"
+        document.getElementById("myModal").style.display = "none"
+        document.getElementsByClassName("mensajeContenido")[0].innerHTML = ""
     }
 }
